@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="number" id = "number1">
+    <input type="number" id = "number2">
+
+    <br>
+    <button id="add">Add</button>
+    <button id="substract">Substract</button>
+    <br>
+
+    <script>
+        const addButton = document.getElementById('add');
+        addButton.onclick = function () {
+            let a = document.getElementById('number1').value;
+            let b = document.getElementById('number2').value;
+            alert(parseFloat(a) + parseFloat(b));
+        }
+        const remButton = document.getElementById('substract');
+        remButton.onclick = function () {
+            let a = document.getElementById('number1').value;
+            let b = document.getElementById('number2').value;
+            alert(parseFloat(a) - b);
+        }
+    </script>
+
+</div>
+</body>
+</html>
